@@ -1,0 +1,26 @@
+{
+  "name": "web-server",
+  "version": "1.0.0",
+  "description": "Proyecto sencillo de un servidor web con Node js",
+  "main": "app.js",
+  "scripts": {
+    "dev": " nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/omar.barrios/web-server.git"
+  },
+  "author": "omar.barrios",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/omar.barrios/web-server/issues"
+  },
+  "homepage": "https://gitlab.com/omar.barrios/web-server#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "nodemon": "^2.0.12"
+  }
+}
