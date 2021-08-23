@@ -12,29 +12,29 @@ app.set('view engine', 'hbs');
 //servir contenido estatico.
 app.use( express.static('public'));
 
-app.get('/', (req, res) => {
-    res.render('home', {
-        nombre: 'Omar Barrios',
-        titulo: 'Web Server'
-    });
-})
+// app.get('/', (req, res) => {
+//     res.render('home', {
+//         nombre: 'Omar Barrios',
+//         titulo: 'Web Server'
+//     });
+// })
 
-app.get('/generic', (req, res) => {
-    res.render('generic', {
-        nombre: 'Omar Barrios',
-        titulo: 'Web Server'
-    });
-})
+// app.get('/generic', (req, res) => {
+//     res.render('generic', {
+//         nombre: 'Omar Barrios',
+//         titulo: 'Web Server'
+//     });
+// })
 
-app.get('/elements', (req, res) => {
-    res.render('elements', {
-        nombre: 'Omar Barrios',
-        titulo: 'Web Server'
-    });
-})
+// app.get('/elements', (req, res) => {
+//     res.render('elements', {
+//         nombre: 'Omar Barrios',
+//         titulo: 'Web Server'
+//     });
+// })
 
 app.get('*', (req, res) => {
-  res.sendFile( __dirname + '/public/404.html');
+  res.sendFile( __dirname + '/public/index.html');
 })
  
 app.listen( port, () => {
